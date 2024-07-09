@@ -1,0 +1,15 @@
+<!--
+/**
+ * @package LuxLig Theme
+ * @author Nuri <truongdoba.nuri@gmail.com>
+ * Copyright © 2024 Luxury Lighting.
+ */
+ -->
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Luxury Lighting</title>
+    <parent>Magento/blank</parent>
+    <media>
+        <preview_image>media/preview.png</preview_image>
+    </media>
+</theme>

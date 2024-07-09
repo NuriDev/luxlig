@@ -1,0 +1,140 @@
+/**
+ * @package LuxLig Theme
+ * @author Nuri <truongdoba.nuri@gmail.com>
+ * Copyright © 2024 Luxury Lighting.
+ *
+ * -------------------------------------------------------------------------------------
+ *
+ * Theme file should contain declarations (overrides) ONLY OF EXISTING extends
+ * Otherwise this theme won't be available for parent nesting
+ * All new extends should be placed in local theme lib or local theme files
+*/
+
+//
+//  Override extends for the theme
+//  _____________________________________________
+
+//  Layout
+@layout__max-width: 100%;
+@layout-indent__width: 0;
+
+@line-height__base: 1.5;
+@root__font-size: 52%;
+@font-size-ratio__base: 1.3;
+
+//  Button
+@button__border-radius: 0;
+@button-primary__border: none;
+@button-primary__hover__border: none;
+
+//  Form
+@form-element-input__color: #666;
+@form-element-input__font-size: false;
+@form-element-input__height: 32px;
+@form-element-input__border-radius: 0;
+@form-element-input-placeholder__color: #999;
+@select__padding: 6px 20px 6px 6px;
+@form-fieldset__margin: 0 0 20px;
+@form-element-input__focus__border: none;
+@focus__box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+
+//  Link
+@link__text-decoration: none;
+@link__visited__text-decoration: none;
+@link__hover__text-decoration: none;
+@link__active__text-decoration: none;
+
+
+//
+//  Utilities
+//  _____________________________________________
+
+.flexbox(
+    @align: flex-start,
+    @direction: row,
+    @justify-content: flex-start,
+    @wrap: wrap,
+    @gap: inherit
+) {
+    display: flex;
+    flex-direction: @direction;
+    align-items: @align;
+    justify-content: @justify-content;
+    gap: @gap;
+    flex-wrap: @wrap;
+}
+
+.opacity(@opacity) {
+    opacity: @opacity;
+}
+
+.border-radius(@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+.transform-rotate(@rotate) {
+    -webkit-transform: rotate(@rotate);
+    -ms-transform: rotate(@rotate); // IE9 only
+    -o-transform: rotate(@rotate);
+    transform: rotate(@rotate);
+}
+
+.transform(@transform) {
+    -webkit-transform: @transform;
+    -ms-transform: @transform; // IE9 only
+    -o-transform: @transform;
+    transform: @transform;
+}
+
+.transition(@transform) {
+    transition: @transform;
+    -moz-transition: @transform;
+    -webkit-transition: @transform;
+    -o-transition: @transform;
+}
+
+.transition-duration(@transition_duration) {
+    transition-duration: @transition_duration;
+    -webkit-transition-duration: @transition_duration;
+    -moz-transition-duration: @transition_duration;
+    -o-transition-duration: @transition_duration;
+}
+
+.box-shadow(@box_shadow) {
+    box-shadow: @box_shadow;
+    -moz-box-shadow: @box_shadow;
+    -webkit-box-shadow: @box_shadow;
+    -o-box-shadow: @box_shadow;
+}
+
+.box-shadow-none() {
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -o-box-shadow: none !important;
+}
+
+.placeholder(@placeholder) {
+    &::-webkit-input-placeholder {
+        color: @placeholder;
+    }
+    &:-moz-placeholder {
+        color: @placeholder;
+    }
+    &::-moz-placeholder {
+        color: @placeholder;
+    }
+    &:-ms-input-placeholder {
+        color: @placeholder;
+    }
+}
+
+.clearfix() {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package LuxLig Base
+ * @author Nuri <truongdoba.nuri@gmail.com>
+ * Copyright © 2024 Luxury Lighting.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="LuxLig_Base">
+        <sequence>
+            <module name="Magento_AdminNotification" />
+        </sequence>
+    </module>
+</config>

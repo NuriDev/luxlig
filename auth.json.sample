@@ -1,0 +1,16 @@
+{
+    "http-basic":{
+        "repo.magento.com": {
+            "username":"db130ed84355046c3c592fc9de2c7562",
+            "password":"0be98d23403893dc234e1433f891e5e7"
+        },
+        "composer.amasty.com": {
+            "username": "eb21ffef9f4cb173f9b7aaa24c20e92c",
+            "password": "8a70a310f2756a5982e37a8f6125e6a4"
+        },
+        "mcom-connector.bcn.magento.com": {
+            "username": "zilker",
+            "password": "oOXw0aBT2szbtWPf"
+        }
+    }
+}

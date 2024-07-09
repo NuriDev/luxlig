@@ -1,0 +1,52 @@
+{
+    "name": "luxlig/theme",
+    "description": "Luxury Lighting Theme",
+    "require": {
+        "php": "~8.1.0||~8.2.0",
+        "magento/framework": "103.0.*",
+        "magento/module-store": "101.1.*",
+        "magento/module-eav": "102.1.*",
+        "magento/module-cms": "104.0.*",
+        "magento/module-backend": "102.0.*",
+        "magento/module-cron": "100.4.*",
+        "magento/module-email": "101.1.*",
+        "magento/module-directory": "100.4.*",
+        "magento/module-media-storage": "100.4.*",
+        "magento/module-config": "101.2.*",
+        "magento/module-catalog-inventory": "100.4.*",
+        "magento/module-indexer": "100.4.*",
+        "magento/module-customer": "103.0.*",
+        "magento/module-theme": "101.1.*",
+        "magento/module-checkout": "100.4.*",
+        "magento/module-widget": "101.2.*",
+        "magento/module-wishlist": "101.2.*",
+        "magento/module-tax": "100.4.*",
+        "magento/module-msrp": "100.4.*",
+        "magento/module-catalog-rule": "101.2.*",
+        "magento/module-product-alert": "100.4.*",
+        "magento/module-url-rewrite": "100.0.*",
+        "magento/module-catalog-url-rewrite": "100.4.*",
+        "magento/module-page-cache": "100.4.*",
+        "magento/module-quote": "101.2.*",
+        "magento/module-configurable-product": "100.4.*",
+        "magento/module-ui": "101.2.*",
+        "luxlig/base": "1.0.*"
+    },
+    "suggest": {
+        "magento/module-cookie": "100.4.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "LuxLig\\Theme\\": ""
+        }
+    }
+}
